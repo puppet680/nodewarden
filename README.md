@@ -56,15 +56,18 @@ English：[`README_EN.md`](./README_EN.md)
 
 **部署步骤：**
 
+   >   **若你只是想体验一下，直接点击第二步一键部署按钮即可**，以下操作为了长期更新使用
+
+
 1. 首先Fork本仓库，命名为**NodeWarden**，取消选择 Copy the main branch only
 2. 根据对储存库的需求，**二选一**点击下面的按钮，修改项目名称为**NodeWarden2**，修改**JWT_SECRET**成32为随机字符串；
   - **R2**：需绑定银行卡；**单个附件/Send上限 100MB**（代码限制，可自行修改）；**总量 10GB 免费**
   
-    [![Deploy (R2)](https://img.shields.io/badge/Deploy%20(R2)-Cloudflare%20Workers-F38020?logo=cloudflare&logoColor=white)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden)
+    [![Deploy (R2)](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden)
   
   - **KV**：无需绑卡；**单个附件/Send 文件上限 25 MiB**（cloudflare限制，不可修改）；**总量 1GB 免费**
 
-    [![Deploy (KV)](https://img.shields.io/badge/Deploy%20(KV)-Cloudflare%20Workers-2ea44f?logo=cloudflare&logoColor=white)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden/tree/kv)
+    [![Deploy (KV)](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden/tree/kv)
 3. 部署完成后，同一页面打开workers设置，将**Git存储库**断开连接
 4. 同一位置，**Git存储库**链接至第一步Fork的仓库（仓库名NodeWarden），**R2选择main分支，KV选择kv分支**（必须选对！！！）
 5. 仓库**NodeWarden2**可以删除

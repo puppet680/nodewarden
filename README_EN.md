@@ -57,15 +57,17 @@
 
 **Deploy steps:**
 
+- **If you just want to try it quickly, you can simply click one of the deploy buttons in step 2.**
+
 1. Fork this repository, name it **NodeWarden**, and make sure **Copy the main branch only** is **unchecked**.
 2. Choose one deployment mode below, rename the project to **NodeWarden2**, and set **JWT_SECRET** to a random 32-character string.
    - **R2**: requires a payment method; **single attachment/Send file limit is 100 MB** (project-level limit, editable in code); **10 GB free storage**.
 
-     [![Deploy (R2)](https://img.shields.io/badge/Deploy%20(R2)-Cloudflare%20Workers-F38020?logo=cloudflare&logoColor=white)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden)
+     [![Deploy (R2)](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden)
 
    - **KV**: no card required; **single attachment/Send file limit is 25 MiB** (Cloudflare platform limit, not editable); **1 GB free storage**.
 
-     [![Deploy (KV)](https://img.shields.io/badge/Deploy%20(KV)-Cloudflare%20Workers-2ea44f?logo=cloudflare&logoColor=white)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden/tree/kv)
+     [![Deploy (KV)](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/shuaiplus/NodeWarden/tree/kv)
 3. After deployment, open the Worker settings on the same page and disconnect the **Git repository**.
 4. Reconnect the **Git repository** to the fork from step 1. This branch selection must match the button you used: **R2 uses `main`, KV uses `kv`**.
 5. The temporary **NodeWarden2** repository can be deleted.
